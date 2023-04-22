@@ -48,21 +48,27 @@ body {
 }
 form {
    display: flex;
-   justify-content: space-around;
+  justify-content: space-around;
    align-items: center;
-   gap: 15px;
+   gap: 25px;
 }
 
 .currency-block {
    display: flex;
+   flex-direction: column;
 }
 
 .currency-block h3 {
    font-size: 22px;
-   margin-right: 10px;
+   margin-bottom: 5px;
+}
+
+.currency-block input{
+   padding: 4px 3px;
 }
 
 .convert-btn {
+   margin-top: 30px;
    background-color: #2a9d8f;
    border: 0;
    outline: 0;
@@ -104,10 +110,11 @@ form {
 @media (max-width: 885px) {
    .main-wrapper {
       max-width: 650px;
-      height: 350px;
+      height: 390px;
    }
    form {
       flex-direction: column;
+      gap: 0;
    }
 
    .convert-btn {
@@ -119,7 +126,11 @@ form {
 
    .currency-block input,
    select {
-      width: 250px;
+      width: 320px;
+   }
+
+   .result{
+      margin-top: 20px;
    }
 }
 
@@ -151,7 +162,7 @@ form {
 
    .currency-block input,
    select {
-      width: 200px;
+      width: 260px;
    }
 }
 
@@ -162,7 +173,7 @@ form {
 
    .currency-block input,
    select {
-      width: 170px;
+      width: 220px;
    }
 
    .main-wrapper h1 {
@@ -170,14 +181,12 @@ form {
    }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 340px) {
    .main-wrapper {
       max-width: 297px;
    }
-
-   .currency-block input,
-   select {
-      width: 160px;
+   .currency-block h3{
+      font-size: 20px;
    }
 }
 

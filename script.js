@@ -67,7 +67,7 @@ function displayFinalResult(data, primary, secondary, amount) {
       result.classList.remove("hidden")
 
       txtFirstCurrency.textContent = `${amount} ${primary} =`
-      txtSecondCurrency.textContent = `${calculated.toFixed(2)} ${secondary}`
+      txtSecondCurrency.textContent = `${calculated.toFixed(5)} ${secondary}`
    } else if (Number(amount) === 0) {
       result.classList.remove("hidden")
       txtFirstCurrency.textContent = "Please type amount"
